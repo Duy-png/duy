@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    background-color: #FFEBEF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.logo .login{
+    flex: 1;
+}
+.name h2{
+     font-family: "Just Another Hand", cursive;
+     color: #5E0124;
+     font-size: 45px;
+    
+
+}
+.logo h3{
+     font-family: "kalam", cursive;
+     margin-left: 15px;
+    text-transform: uppercase;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+   
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login img{
+   width: 128px;
+   height: auto;
+display: block;
+}
+.input-group{
+    position: relative  ;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.input-group i{
+position: absolute         ;
+left: 10px;
+top: 70%;
+transform: translateY(-50%);
+color: #5E0124;
+
+}
+.login input{
+    background-color:#ffd6e0;
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+    width: 100%;
+    padding-left: 35px;
+    margin-bottom: 15px;
+}
+.login button{
+    background-color: #ff7899;
+    margin-top: 15px;
+    border: none;
+    border-radius: 13px;
+}
