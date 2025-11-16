@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #7FD957;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 64px);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  padding: 25px 30px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar button:hover,
+.sidebar button.active {
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+}
+
+.stat-card {
+  background-color: #D4F1C5;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card .label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stat-card .value {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #D4F1C5;
+}
+
+th {
+  padding: 20px 25px;
+  text-align: left;
+  border-right: 1px solid #ccc;
+  font-size: 16px;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+tbody tr {
+  background-color: #E8F5E0;
+  border-top: 1px solid #ccc;
+}
+
+td {
+  padding: 25px;
+  border-right: 1px solid #ccc;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+.approve-btn {
+  background-color: #7FD957;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.approve-btn:hover {
+  background-color: #6BC847;
+}
+
+.approved-text {
+  color: #666;
+}
